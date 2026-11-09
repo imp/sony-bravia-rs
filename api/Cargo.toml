@@ -1,0 +1,16 @@
+[package]
+name = "sony-bravia-api"
+description = "SONY BRAVIA TV API definitions"
+
+version.workspace = true
+edition.workspace = true
+repository.workspace = true
+license.workspace = true
+
+
+[dependencies]
+serde.workspace = true
+
+
+[lints]
+workspace = true

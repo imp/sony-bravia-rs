@@ -1,0 +1,34 @@
+[workspace]
+resolver = "3"
+members = ["api"]
+
+
+[workspace.package]
+version = "0.1.0"
+edition = "2024"
+repository = "https://github.com/imp/sony-bravia-rs"
+license = "MIT"
+
+
+[workspace.dependencies]
+serde = { version = "1.0", features = ["derive"] }
+
+
+[workspace.lints.clippy]
+use_self = "warn"
+map_flatten = "warn"
+map_unwrap_or = "warn"
+
+
+[workspace.lints.rust]
+deprecated_in_future = "warn"
+future_incompatible = "warn"
+noop_method_call = "warn"
+unreachable_pub = "warn"
+missing_debug_implementations = "warn"
+rust_2018_compatibility = "warn"
+rust_2021_compatibility = "warn"
+rust_2018_idioms = "warn"
+trivial_casts = "warn"
+unused = "warn"
+# warnings = "deny"
